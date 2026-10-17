@@ -1,0 +1,17 @@
+{
+  "name": "lista-tarefas-alarme",
+  "version": "1.0.0",
+  "description": "Lista de tarefas Android com data, hora e notificacoes locais",
+  "scripts": {
+    "sync": "npx cap sync android",
+    "android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/local-notifications": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0"
+  }
+}

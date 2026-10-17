@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>📋 Minhas Tarefas</h1>
+    <p class="subtitulo">Agende suas tarefas e receba um alerta no horário marcado.</p>
+
+    <section class="formulario">
+      <label for="tarefa">Tarefa</label>
+      <input id="tarefa" type="text" placeholder="Ex.: Tomar remédio" maxlength="120">
+
+      <div class="data-hora">
+        <div><label for="data">Data</label><input id="data" type="date"></div>
+        <div><label for="hora">Hora</label><input id="hora" type="time"></div>
+      </div>
+
+      <button id="btnAdicionar">➕ Adicionar tarefa</button>
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+
+    <div class="titulo-lista"><h2>Tarefas</h2><span id="contador">0 tarefas</span></div>
+    <section id="listaTarefas"></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@capacitor/core@8/dist/capacitor.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
